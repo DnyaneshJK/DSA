@@ -3,7 +3,7 @@ class Solution {
         int i=0;
         int c=0;
         int c1=0;
-        String s1="";
+        StringBuilder s1 = new StringBuilder();
         for(int j=0;j<s.length();j++){
             if(s.charAt(j) =='('){
                 c++;
@@ -12,10 +12,10 @@ class Solution {
             }
 
             if(c==c1){
-                s1+= s.substring(i+1,j);
+                s1.append(s.substring(i+1,j));
                 i=j+1;
             }
         }
-            return s1;
+            return s1.toString();
     }
 }
