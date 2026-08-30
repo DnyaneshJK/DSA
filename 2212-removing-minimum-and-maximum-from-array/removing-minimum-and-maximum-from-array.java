@@ -6,8 +6,7 @@ class Solution {
         int n= nums.length;
         int imax=0;
         int imin=0;
-        int ans1=0;
-        int ans2=0;
+  
 
         for(int i=0;i<n;i++){
             if(nums[i]>max){
