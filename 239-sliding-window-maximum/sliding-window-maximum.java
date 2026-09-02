@@ -9,7 +9,7 @@ class Solution {
                 d.pollFirst();
             }
 
-            while(!d.isEmpty() && nums[d.peekLast()]<nums[i]){
+            while(!d.isEmpty() && nums[d.peekLast()]<=nums[i]){
                 d.pollLast();
             }
 
