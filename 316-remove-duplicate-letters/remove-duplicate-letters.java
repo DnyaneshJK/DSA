@@ -17,8 +17,7 @@ class Solution {
         }
 
         while(!stack.isEmpty()){
-            char c = stack.removeLast();
-            sb.append(c);
+            sb.append(stack.removeLast());
         }
 
         return sb.toString();
