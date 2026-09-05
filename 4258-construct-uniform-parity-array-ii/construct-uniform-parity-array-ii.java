@@ -17,7 +17,7 @@ class Solution {
         if(nums1.length==c || nums1.length==d) return true;
 
         for(int i=0;i<nums1.length;i++){
-            if(nums1[i]%2==0 && nums1[i]<=mino){
+            if(nums1[i]%2==0 && nums1[i]-mino<0){
                 return false;
             }
         }
