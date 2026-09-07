@@ -10,15 +10,28 @@
  */
 class Solution {
     public int getDecimalValue(ListNode head) {
-        StringBuilder sb = new StringBuilder();
-        ListNode curr = head;
-        while(curr!=null){
-            sb.append(curr.val);
-            curr=curr.next;
+        int ans=0;
+
+        while(head!=null){
+            ans=head.val+2*ans;
+            head=head.next;
         }
-
-        int ans = Integer.parseInt(sb.toString(),2);
-
         return ans;
+        
     }
 }
+
+// class Solution {
+//     public int getDecimalValue(ListNode head) {
+//         StringBuilder sb = new StringBuilder();
+//         ListNode curr = head;
+//         while(curr!=null){
+//             sb.append(curr.val);
+//             curr=curr.next;
+//         }
+
+//         int ans = Integer.parseInt(sb.toString(),2);
+
+//         return ans;
+//     }
+// }
