@@ -25,9 +25,9 @@ class Solution {
             curr=curr.next;
         }
 
-         if (list1 != null) {
+        if(list1!=null){
             curr.next = list1;
-        } else {
+        } else{
             curr.next = list2;
         }
 
