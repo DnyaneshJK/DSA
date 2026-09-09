@@ -19,11 +19,12 @@ class Solution {
         }
 
         ListNode prev = null;
-        ListNode curr= slow;
+        ListNode curr = slow;
+
         while(curr!=null){
             ListNode next = curr.next;
-            curr.next=prev;
-            prev =curr;
+            curr.next = prev;
+            prev=curr;
             curr=next;
         }
 
