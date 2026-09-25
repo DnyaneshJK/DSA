@@ -9,14 +9,11 @@ class Solution {
             }
         }
 
-        List<Boolean> arr = new ArrayList<>();
+        List<Boolean> arr = new ArrayList<>(n);
 
-        for(int i=0;i<n;i++){
-            if(candies[i]+extraCandies>=max){
-                arr.add(true);
-            } else{
-                arr.add(false);
-            }
+        for(int candy : candies){
+                arr.add(candy+extraCandies>=max);
+            
         }
         return arr;
     }
