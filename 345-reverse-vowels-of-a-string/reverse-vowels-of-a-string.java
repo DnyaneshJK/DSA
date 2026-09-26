@@ -3,7 +3,6 @@ class Solution {
         int i=0;
         int j=s.length()-1;
         char[] c = s.toCharArray();
-        StringBuilder sb = new StringBuilder();
         while(i<j){
             if("aeiouAEIOU".indexOf(s.charAt(i))!=-1 && "aeiouAEIOU".indexOf(s.charAt(j))!=-1){
                 char temp = c[i];
@@ -22,11 +21,7 @@ class Solution {
             }
         }
 
-        for(char a : c){
-            sb.append(a);
-        }
-
-        return sb.toString();
+        return new String(c);
         
     }
 }
