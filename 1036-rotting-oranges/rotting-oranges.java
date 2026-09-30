@@ -3,12 +3,10 @@ class Solution {
 
     public int orangesRotting(int[][] grid) {
         Queue<int[]> q = new ArrayDeque<>();
-        int c=0;
 
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
                 if(grid[i][j]==2){
-                    c++;
                     q.offer(new int[]{i,j});
                 }
                 if(grid[i][j]==1){
